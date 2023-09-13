@@ -6,5 +6,8 @@ class Cardnews extends HTMLElement{
     shadow.innerHTML= "<h1>hello word</h1>"
     }
     
+    build(){}
+
+    styles(){}
 }
 customElements.define('card-news', Cardnews)
