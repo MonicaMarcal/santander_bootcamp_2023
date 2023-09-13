@@ -8,16 +8,29 @@ class Cardnews extends HTMLElement{
     shadow.appendChild(this.styles());//adiciona todos os estilos css
     }
     
-    build(){
+    build(){ //construindo os HTML
         const componentRoot = document.createElement("div");
         componentRoot.setAttribute("class", "card");
 
         const cardLeft = document.createElement("div");
         cardLeft.setAttribute("class", "card__left");
 
+        const autor = document.createElement("span");
+        const linkTitle = document.createElement("a");
+        const newsContent = document.createElement("p");
+
+        //filhos de card__left
+        cardLeft.appendChild(autor);
+        cardLeft.appendChild(linkTitle);
+        cardLeft.appendChild(newsContent);
+
         const cardRight = document.createElement("div");
         cardRight.setAttribute("class", "card__right");
 
+        const newsImage = document.createElement("img");
+        cardRight.appendChild(newsImage); //filha de card__right
+
+        //filhos do componente root(card)
         componentRoot.appendChild(cardLeft);
         componentRoot.appendChild(cardRight);
 
@@ -25,6 +38,8 @@ class Cardnews extends HTMLElement{
         return componentRoot
     }
 
-    styles(){}
+    styles(){//construindo a estilização
+
+    }
 }
 customElements.define('card-news', Cardnews)
