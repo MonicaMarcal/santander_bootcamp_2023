@@ -47,7 +47,13 @@ let produto: object = {
 let dados: string[] = ["felipe", "ana", "adriana"];
 let dados2: Array<string> = ["felipe", "ana", "adriana"];
 
-let infos: (string | number)[] = [322, "felipe"];
+let infos: (string | number)[] = [322, "felipe"]; //array de multi types
 
 //________________________________________________________________________________________//
 
+/**
+ * TUPLAS //vetor/array de multi types que segue a ordem de definição da variavel
+ */
+let boleto: [string, number, number] = ["agua conta", 199.9, 32342342];
+
+//________________________________________________________________________________________//
