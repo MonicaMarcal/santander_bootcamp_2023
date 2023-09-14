@@ -2,10 +2,10 @@
 //classe é como se fosse uma forma para utilizar varias vezes
 
 /*
-  data modifiers
-  public
-  private
-  protected
+  data modifiers(modificadores de acesso)temos:
+  public -> todos acessam
+  private -> acesso somente dentro da classe
+  protected -> acesso pela classe e subclasse que herdam a classe
 */
 
 class Character {
