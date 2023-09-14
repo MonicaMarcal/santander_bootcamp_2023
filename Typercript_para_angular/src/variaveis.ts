@@ -57,3 +57,11 @@ let infos: (string | number)[] = [322, "felipe"]; //array de multi types
 let boleto: [string, number, number] = ["agua conta", 199.9, 32342342];
 
 //________________________________________________________________________________________//
+
+/**
+ * arrays métodos (tem acesso para utilizar os mesmos métodos do Javascript)
+ */
+//EX:
+dados.pop();
+
+//________________________________________________________________________________________//
