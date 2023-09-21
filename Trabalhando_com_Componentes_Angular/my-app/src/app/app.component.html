@@ -1,0 +1,21 @@
+
+<h1>Hello {{ name }}!</h1>
+<menu-component></menu-component>
+
+<p>Start editing to see some magic happen :)</p>
+<h1>OLÁ MUNDÃO</h1>
+
+<!-- data binding = associação de dados -->
+
+
+<!-- interpolação  -->
+<my-button label="{{ buttonLabel }}"></my-button> <!--Passando como {{}} espera que seja uma variavel, algo que vem de um outro componente-->
+<my-button label="noticia"></my-button> <!--Passando como string "" - espera que seja apenas um texto, sem conexão com outro componente-->
+
+
+<!-- property binding -->
+<my-button [label]="buttonSecond"></my-button><!--Mesmo efeito que o {{}}-->
+<my-button [label]="'CARRINHO'"></my-button> <!--Mesmo efeito que "" strings simples-->
+
+<!-- two way data binding -->
+<app-entry-data></app-entry-data>
