@@ -27,6 +27,10 @@ npm -v
 ```bash
 npm install -g @angular/cli
 ```
+- Para verificar se instalou Angular:
+```bash
+ng version
+```
 
 ## EM CASO DE ERRO
 
