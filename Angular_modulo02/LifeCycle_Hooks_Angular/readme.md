@@ -43,14 +43,26 @@ ng generate --help
 
 ```
 Life Cycle Hooks:
+//Executa quando componente é montado e iniciado
 1. ngOnInit()
+
+//executa quando o valor de propriedade é alterada via input()
 2. ngOnChanges()
+
+//Executa quando propriedade do componente são verificados
 3. ngDoCheck()
 
 Eventos de Check:
+//Executa quando Angular realiza qualquer projeção de conteudo em seus componentes
 3.1 ngAfterContentInit()
+
+//Executa sempre que conteudo do conteudo do componente é verificado pelo mecanismo de detecção de alteração do Angular
 3.2 ngAfterContentChecked()
+
+//Executa depois que um componente é totalmente inicializada(carregou tudo)
 3.3 ngAfterViewInit()
+
+//Executa quando a visualização de um componente é verificada pelo algoritmo de detecção de alterações do Angular
 3.4 ngAfterViewChecked()
 
 Evento ao destruir:
