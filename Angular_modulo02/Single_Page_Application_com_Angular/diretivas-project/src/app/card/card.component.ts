@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent  implements OnInit{
 
   produtos:string[] = []
+  /* menuType:string = ""  *///sem especificação cai no usuario padrão ou com especificação 'admin' ou 'superuser'
+  menuType:string = "admin"
+ /*  menuType:string = "superuser"  */
 
   constructor(){
     this.produtos = [
