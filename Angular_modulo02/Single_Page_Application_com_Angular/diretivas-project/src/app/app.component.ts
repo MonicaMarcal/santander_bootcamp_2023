@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'diretivas-project';
-  isAliveCard = false; // mude true ou false
+  isAliveCard = true; // mude true ou false
 }
