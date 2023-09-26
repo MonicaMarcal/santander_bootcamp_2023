@@ -7,6 +7,7 @@
 <app-title></app-title>
 <app-title></app-title>
 -->
-<app-check-sample></app-check-sample>
+<app-check-sample *ngIf="isAliveCheckSample"></app-check-sample>
+<button (click)="disposeCheckSample()">Destruir</button>
 
 <router-outlet></router-outlet>

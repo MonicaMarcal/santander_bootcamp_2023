@@ -66,6 +66,7 @@ Eventos de Check:
 3.4 ngAfterViewChecked()
 
 Evento ao destruir:
+//Executa assim que o componente sai, é destruido.
 4. ngOnDestroy()
 
 ```
