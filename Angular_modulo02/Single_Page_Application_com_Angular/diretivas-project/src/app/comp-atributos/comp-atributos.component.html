@@ -2,6 +2,9 @@
 <button (click)="trocar()">CHANGE</button>
 <h1 [ngStyle]="{'background':corFundo, 'color':corDafonte}" >CURSO ANGULAR</h1>
 
+<ng-content select="h2"></ng-content>
+
+
 <h1>Lista de compras</h1>
 <p>Adicione um item</p>
 <input type="text" [(ngModel)]="item">
@@ -17,6 +20,8 @@
 <ng-template [ngIf]="isEnableBlock">
   <a href="#">FINALIZAR COMPRA</a>
 </ng-template>
+
+<ng-content select="p"></ng-content>
 
 <br>
 <ng-template [ngIf]="true">
