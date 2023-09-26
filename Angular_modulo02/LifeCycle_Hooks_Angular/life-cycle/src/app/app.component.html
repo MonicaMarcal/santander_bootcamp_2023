@@ -1,0 +1,13 @@
+<h1>MyAPP</h1>
+<!--Passando valores
+<app-title nome="produto 01"></app-title>
+<app-title nome="produto 02"></app-title>
+-->
+<!--Sem valores
+<app-title></app-title>
+<app-title></app-title>
+-->
+<app-check-sample *ngIf="isAliveCheckSample"></app-check-sample>
+<button (click)="disposeCheckSample()">Destruir</button>
+
+<router-outlet></router-outlet>
