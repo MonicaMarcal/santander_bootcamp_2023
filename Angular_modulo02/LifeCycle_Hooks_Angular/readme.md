@@ -1,8 +1,8 @@
-## VERSÃO: Angular CLI: 16.2.3
+### VERSÃO: Angular CLI: 16.2.3
 
-## INSTRUTOR DO MODULO: 
+### INSTRUTOR DO MODULO: 
 
-## COMANDOS BÁSICOS:
+#### COMANDOS BÁSICOS:
 
 Verifica a versão do angular
 ```
@@ -37,4 +37,23 @@ Esquema para gerar estruturas de código
 ```
 ng generate
 ng generate --help
+```
+
+#### EVENTOS DO CICLO DE VIDA: https://angular.io/guide/lifecycle-hooks
+
+```
+Life Cycle Hooks:
+1. ngOnInit()
+2. ngOnChanges()
+3. ngDoCheck()
+
+Eventos de Check:
+3.1 ngAfterContentInit()
+3.2 ngAfterContentChecked()
+3.3 ngAfterViewInit()
+3.4 ngAfterViewChecked()
+
+Evento ao destruir:
+4. ngOnDestroy()
+
 ```
