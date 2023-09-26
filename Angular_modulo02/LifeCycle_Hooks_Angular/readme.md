@@ -21,19 +21,20 @@ ng add <collection>
 
 Compilar e criar servidor, toda vez que modificar o codigo ele vai buildar e executar novamente, ([nome do projeto]).
 ```
-ng server [project]
+ng serve [project]
 ```
 
-Executar testes, ([nome do projeto])
+Executar testes ([nome do projeto])
 ```
 ng tests [project]
 ```
 
-Procura na documentação uma palavra especifica (<adicione a palavra aqui>).
+Procura uma palavra especifica na documentação(<adicione a palavra aqui>).
 ```
 ng doc <keyword>
 ```
-Passar esquema de arquivos que queremos gerar.
+Esquema para gerar estruturas de código
 ```
 ng generate
+ng generate --help
 ```
