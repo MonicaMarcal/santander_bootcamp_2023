@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';//modulos do angular
 import { BrowserModule } from '@angular/platform-browser';//navegador
+import { ListaModule } from './lista/lista.module'
 
 import { AppRoutingModule } from './app-routing.module'; //roteamento do angular
 import { AppComponent } from './app.component';
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [ //importar outros modules
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ListaModule
   ],
   exports:[], //fornece para outros modules partes especificas de um module
   providers: [], //associar provedores de dados(como o banco de dados)
