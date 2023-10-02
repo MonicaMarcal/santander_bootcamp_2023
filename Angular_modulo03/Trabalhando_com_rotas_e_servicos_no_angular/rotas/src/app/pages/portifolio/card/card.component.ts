@@ -9,9 +9,15 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class CardComponent implements OnInit{
 
   constructor(private parametrizador: ActivatedRoute){
+     //http://localhost:4200/portfolio/{1}
       this.parametrizador.params.subscribe(
         res => console.log(res)
       )
+
+      //http://localhost:4200/portfolio/1?{name=monica&token=123}
+       this.parametrizador.queryParams.subscribe(
+         res => console.log(res)
+    )
   }
   ngOnInit(): void {
   }
