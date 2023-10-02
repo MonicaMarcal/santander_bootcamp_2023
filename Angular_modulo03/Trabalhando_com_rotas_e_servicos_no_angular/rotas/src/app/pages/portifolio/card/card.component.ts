@@ -22,9 +22,9 @@ export class CardComponent implements OnInit{
   }
   ngOnInit(): void {
     //redidireciona apos 5 segundos para a pagina principal
-      setInterval(()=>{
+     /*  setInterval(()=>{
     this.navegador.navigate(['/'])
-    }, 5000)
+    }, 5000) */
   }
 
 }
