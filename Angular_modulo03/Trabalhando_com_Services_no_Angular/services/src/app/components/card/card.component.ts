@@ -22,19 +22,26 @@ export class CardComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.service.getPokemon('pikachu').subscribe(
+    this.getPokemon('pikachu')
+  }
+
+
+  getPokemon(searchName:string){
+    this.service.getPokemon(searchName).subscribe(
       {
-        next:(res) => {
+        next: (res) => {
+
           this.pokemon = {
-            id:res.id,
+            id: res.id,
             name: res.name,
-            sprites:res.sprites,
+            sprites: res.sprites,
             types: res.types
-            }
-          },
-        error:(err) => console.log(err)
+          }
+        },
+        /* error: (err) => console.log('not found') */
       }
     )
   }
+
 
 }
