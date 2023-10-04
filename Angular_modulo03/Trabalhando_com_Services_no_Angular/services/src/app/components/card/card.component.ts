@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PokemonService } from 'src/app/services/pokemon.service';
 
 @Component({
   selector: 'app-card',
@@ -6,12 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit{
-[x: string]: any;
   name:string = "Pikachu"
   attributeTypes: string[] = ['raio, trovao']
 
-  constructor(){}
+  constructor(
+    private service:PokemonService
+  ){}
+
   ngOnInit(): void {
+    this.service.getPokemon('bubalsauro')
   }
 
 }
