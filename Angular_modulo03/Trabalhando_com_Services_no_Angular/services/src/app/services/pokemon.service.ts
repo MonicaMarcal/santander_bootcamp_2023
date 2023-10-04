@@ -1,13 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core'; //conteudo que pode ser injetado em outros componentes
 import { environment } from 'src/environments/environment';
+import { Observable } from 'rxjs';
+import { PokemonData } from '../models/pokemonData'
 
 @Injectable({
   providedIn: 'root' //pasta root do projeto
 })
 export class PokemonService {
   private baseURL:string = ""
-  private pokeData:any
+  private pokeData:PokemonData | any
 
   constructor(
     private http:HttpClient
@@ -15,8 +17,13 @@ export class PokemonService {
     this.baseURL  = environment.pokeApi
    }
 
-  getPokemon(pokemonName:string) {
-    this.pokeData = this.http.get(`${this.baseURL}${pokemonName}`)
-    console.log(this.pokeData)
-  }
+   getPokemon(pokemonName:string):Observable<PokemonData>{
+    this.pokeData = this
+                    .http
+                    .get<PokemonData>
+                    (`${this.baseURL}${pokemonName}`)
+
+
+      return this.pokeData
+    }
 }
