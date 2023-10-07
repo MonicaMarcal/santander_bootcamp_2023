@@ -4,7 +4,7 @@ A Linguagem Java é composta por um conjunto bem definido de funcionalidades (fe
 
 Abaixo iremos explorar algumas funcionalidades essenciais para nosso engajamento com a linguagam.
 
-![](<.gitbook/assets/image (5) (1) (1).png>)
+<img src="src/doc.png">
 
 ### Simples
 
